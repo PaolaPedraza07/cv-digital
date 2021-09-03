@@ -1,10 +1,10 @@
 @font-face {
   font-family:'Mi fuente';
-  src: url(extra/Winter\ Insight.ttf);
+  src: url(../fuentes/fuente1.ttf);
 }
 @font-face {
   font-family: 'Otra fuente';
-  src: url(extra/Please\ write\ me\ a\ song.ttf);
+  src: url(../fuentes/fuente2.ttf);
 }
 body{
   background-color: rgb(255, 255, 255);
