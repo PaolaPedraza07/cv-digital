@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paola Pedraza</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <div class="menu" id="nav">
+      <div class="elementos-menu">
+        INICIO
+      </div>
+      <div class="elementos-menu">
+        SOBRE MI
+      </div>
+      <div class="elementos-menu">
+        TECH SKILLS
+      </div>
+      <div class="elementos-menu">
+        SOFT SKILLS
+      </div>
+      <div class="elementos-menu">
+        CONTACTO
+      </div>
+    </div>
+  </header>
+
+  <div class="titulo">
+    <img class="imagen-perfil" src="imágenes/Foto-perfil.jpeg" alt="">
+    <h2 class="titulos">Paola Pedraza Suárez del Real</h2>
+    <h1 class="sub-titulos">Full Stack Developer Jr.</h1>
+    <table>
+      <tr>
+        <td class="iconos"> <i class="bi bi-envelope"></i></td>
+        <td class="texto-iconos">paolapedraza.3007@gmail.com</td>
+      </tr>
+      <tr>
+        <td class="iconos"><i class="bi bi-telephone"></i></td>
+        <td class="texto-iconos">3317640077</td>
+      </tr>
+      <tr>
+        <td class="iconos"><i class="bi bi-geo-alt"></i></td>
+        <td class="texto-iconos">Guadalajara, Jalisco.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="sobre-mi">
+      <h2 class="titulos">SOBRE MI</h2>
+      <p>Mi nombre es Paola Pedraza Suárez del Real, tengo 22 años.
+        Actualmente estoy estudiando la carrera de ingeniería en sistemas de manera ejectuva, estoy en
+        busca de un rol de tiempo completo
+        en el cual pueda desempeñarme
+        profesionalmente como desarrollador
+        de software mejorando y poniendo en
+        práctica mis habilidades técnicas en
+        base a las expectativas de la compañía
+        para poder cumplir sus objetivos,
+        basándonos en los valores de la misma.
+      </p>
+    
+  </div>
+
+  <div class="technical-skills">
+    <div class="titulos">
+      <h2>Technical skills</h2>
+    </div>
+
+    <div class="contenedor slides">
+
+      <div class="card">
+        <img src="https://jml.neocities.org/html5-css3-js.png" alt="">
+        <h4>Front end</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi omnis ratione ullam atque natus sunt
+          quia quisquam, voluptates cum quo, laboriosam sit provident animi fuga dolores? Consectetur, officia
+          praesentium!</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.blogs.es/8d2420/650_1000_java/1366_2000.png" alt="">
+        <h4>Back end</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi omnis ratione ullam atque natus sunt
+          quia quisquam, voluptates cum quo, laboriosam sit provident animi fuga dolores? Consectetur, officia
+          praesentium!</p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program-thumbnail.png"
+          alt="">
+        <h4>Adicional</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi omnis ratione ullam atque natus sunt
+          quia quisquam, voluptates cum quo, laboriosam sit provident animi fuga dolores? Consectetur, officia
+          praesentium!</p>
+      </div>
+    </div>
+    <br><br><br>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6fc543b904.js" crossorigin="anonymous"></script>
+  <script>
+    var nav = document.getElementById('nav');
+    window.onscroll = function() {
+      if (window.pageYOffset > 1) {
+        nav.classList.add("painted");
+      } else {
+        nav.classList.remove("painted");
+      }
+    }
+  </script>
+</body>
+
+</html>
