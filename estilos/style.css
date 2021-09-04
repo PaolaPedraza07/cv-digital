@@ -21,6 +21,9 @@ div, h1, h2, p{
   color: white;
   font-size: 30px;
 }
+.text-black{
+  color: black;
+}
 
 .menu{
   background-color: rgba(0, 0, 0, 0.1);
@@ -112,58 +115,46 @@ div, h1, h2, p{
   justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
-  .contenedor{
-    width: 100%;
-    max-width: 1200px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+#techSkills{
+  background-image: linear-gradient(135deg, #00B7D4, #505488, #445bb6, #672d9e, #5A4894, #A950A1, #FF7CAE);
+  background-size: 500%;
+  animation: animado 10s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 5em 2em 5em;
   
-  }
-  .contenedor .card{
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
-    border: 1px s rgb(163, 163, 163);
-  }
-  
-  .contenedor .card:hover{
-    transform: (-15px);
-    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
-  
-  }
-  .contenedor .card img{
-    width:330px;
-    height: 220px;
-  }
-  contenedor .card h4{
-    font-weight: 600;
-  }
-  contenedor .card p{
-    padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 300;
-  }
-.card{
-  color: black;
 }
-.slides {
+.contenedor-tech-skills{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+.tech-skill{
+  background-color: white;
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding: 1em;
+}
+.tech-skill:hover{
+  box-shadow: 0 30px 30px rgba(0,0,0,0.2);
+}
+.table-skills{
+width: 100%;
+margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+.contenedor-tech-skills.slides {
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -175,7 +166,7 @@ div, h1, h2, p{
   }
 
   to {
-    margin-left: 303px;
+    margin-left: 0px;
     width: 100%;
   }
 }
