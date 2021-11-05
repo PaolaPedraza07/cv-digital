@@ -68,42 +68,73 @@
     
   </div>
 
-  <div class="technical-skills">
-    <div class="titulos">
-      <h2>Technical skills</h2>
+  <div id="techSkills">
+
+    <h2 class="titulos">TECHNICAL SKILLS</h2>
+
+    <div id="cardsSkills" class="contenedor-tech-skills slides">
+      
+      <div class="tech-skill">
+        <h1 class="sub-titulos text-black">FRONT-END</h1>
+        <table class="table-skills">
+          <tr>
+            <td><img class="iconos-front" src="iconos/html (1).png" alt=""></td>
+            <td>HTML5</td>
+          </tr>
+          <tr>
+            <td><img class="iconos-front" src="iconos/css (1).png" alt=""></td>
+            <td>CSS3</td>
+          </tr>
+          <tr>
+            <td><img class="iconos-front" src="iconos/javascript (1).png" alt=""></td>
+            <td>JAVASCRIPT</td>
+          </tr>
+          <tr>
+            <td><img class="iconos-front" src="iconos/bootstrap.png" alt=""></td>
+            <td>BOOTSTRAP</td>
+          </tr>
+        </table>  
+      </div>
+      <div class="tech-skill">
+        <h1 class="sub-titulos text-black">BACK-END</h1>
+        <table class="table-skills">
+          <tr>
+            <td><img class="iconos-front" src="iconos/java1.png" alt=""></td>
+            <td>JAVA SE 8</td>
+          </tr>
+          <tr>
+            <td><img class="iconos-front" src="iconos/springboot.png" alt=""></td>
+            <td>SPRING BOOT</td>
+          </tr>
+          <tr>
+            <td><img class="iconos-front" src="iconos/mysql.png" alt=""></td>
+            <td>MYSQL</td>
+          </tr>
+        </table>
+      </div>
+      <div class="tech-skill">
+        <h1 class="sub-titulos text-black">ADICIONAL</h1>
+        <table class="table-skills">
+          <tr>
+            <td>1</td>
+            <td>GIT HUB</td>
+          </tr>
+          <tr >
+            <td>2</td>
+            <td>SCRUM</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>JUNIT</td>
+          </tr>
+        </table>
+      </div>
+    
     </div>
-
-    <div class="contenedor slides">
-
-      <div class="card">
-        <img src="https://jml.neocities.org/html5-css3-js.png" alt="">
-        <h4>Front end</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi omnis ratione ullam atque natus sunt
-          quia quisquam, voluptates cum quo, laboriosam sit provident animi fuga dolores? Consectetur, officia
-          praesentium!</p>
-      </div>
-
-      <div class="card">
-        <img src="https://i.blogs.es/8d2420/650_1000_java/1366_2000.png" alt="">
-        <h4>Back end</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi omnis ratione ullam atque natus sunt
-          quia quisquam, voluptates cum quo, laboriosam sit provident animi fuga dolores? Consectetur, officia
-          praesentium!</p>
-      </div>
-
-      <div class="card">
-        <img
-          src="https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program-thumbnail.png"
-          alt="">
-        <h4>Adicional</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi omnis ratione ullam atque natus sunt
-          quia quisquam, voluptates cum quo, laboriosam sit provident animi fuga dolores? Consectetur, officia
-          praesentium!</p>
-      </div>
-    </div>
-    <br><br><br>
-
+    
   </div>
+  
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/6fc543b904.js" crossorigin="anonymous"></script>
   <script>
@@ -115,6 +146,17 @@
         nav.classList.remove("painted");
       }
     }
+  </script>
+  <script>
+    var cards = document.getElementById('cardsSkills');
+    $(window).scroll(function () {
+      if($(window).scrollTop() > 100) {
+        cards.addClass("slides");
+      }
+      else {
+        cards.removeClass("slides");
+      }
+    });
   </script>
 </body>
 
